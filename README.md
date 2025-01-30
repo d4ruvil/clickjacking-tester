@@ -26,10 +26,6 @@ cd clickjacking-tester
 3. Click the "Test" button to check if the site can be embedded.
 4. If the site loads inside the iframe, it may be vulnerable to clickjacking.
 
-## Screenshot
-
-![Clickjacking Tester Screenshot](screenshot.png)
-
 ## Security Considerations
 
 - This tool should only be used for ethical security testing and research purposes.
