@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Tester</title>
+    <script src="../lib/jspdf.umd.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; width: 400px; padding: 10px; }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .loading { display: none; color: #007bff; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Clickjacking Test</h2>
+    <div class="loading" id="loading">Loading...</div>
+    <div class="error" id="error"></div>
+    <iframe id="testFrame"></iframe>
+    <button id="generatePoc">Generate PoC</button>
+    <script src="popup.js"></script>
+</body>
+</html>
